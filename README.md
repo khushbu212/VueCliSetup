@@ -1,6 +1,7 @@
 # TO SETUP VUE CLI PROJECT
+TO SETUP VUE CLI PROJECT
 
-- (Remember: open command prompt in vscode terminal instead of powershell)
+*(Remember: open command prompt in vscode terminal instead of powershell)
 
 1.npm install -g @vue/cli
 2. go inside the folder where you want to create app
@@ -25,7 +26,7 @@ step 3. npm run serve
 ** setting up mongod 
 1. add envvironment variables path , give the path of mongod installed file
 2. in most cases the path is: C:\Program Files\MongoDB\Server\5.0\bin\
-3. (create data/db folder within documents )restart command prompt 
+3.(create data/db folder within documents )restart command prompt 
 4. mongod --version
 5. cd
 6. cd Documents
@@ -94,9 +95,10 @@ db.persons.find( { 'address.city': 'Bangalore' } );
 _______________________________________________________________________________________________________
 ### to setup mongo tools and robo 3T
 _________________________________________________________________________________
-1.install it first and then add path in environment variables.
-2.then open cmd prompt.
-3.copy(link is given below) paste this folder with name 03-shows in any folder(say, 'documents/mongod/03-shows') https://github.com/puranik3/fynd-fsd-aug-2021/tree/master/documents/mongodb-data
+1.install it first and then add path in environment variables
+2.then open cmd prompt
+3.copy(link is given below) paste this folder with name 03-shows in any folder(say, 'documents/mongod/03-shows')
+https://github.com/puranik3/fynd-fsd-aug-2021/tree/master/documents/mongodb-data
 4.cd documents/mongod/03-shows
 5.mongoimport
 6.mongoimport --db showsDB --collection shows --drop --file shows.json --jsonArray
@@ -170,5 +172,25 @@ db.shows.find(
     }
 );
 
+Express
+In terminal:
+1. cd expressfolder
+2. npm init -y
+3. npm install
+4. npm i express
+5. npm i ejs
+6. npm i nodemon
+7. edit script in package.json file: 
+	  "scripts": {
+    "start": "nodemon ."
+  },
+8. also give path as src/index.js in main in package.json 
+9 create src folder and inside that, create index.js file 
+10. in terminal: npm start 
 
+now go to system variables in environment variables, and click new 
+1. set name: NODE_ENV  value: development
+
+now go to vscode's terminal
+and open powershell
 
